@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://e3ayfhafk52r"]
+
+[ext_resource type="Texture2D" uid="uid://bbsantfrt43wu" path="res://assests/background3-720.png" id="1_g5y53"]
+[ext_resource type="Texture2D" uid="uid://bnufqb3dkia0" path="res://assests/paralaxbg_-_2.png" id="2_15idg"]
+[ext_resource type="Texture2D" uid="uid://bairuppybdvvd" path="res://assests/paralaxbg_-_1.png" id="3_cpesl"]
+
+[node name="Background3-720" type="Sprite2D"]
+position = Vector2(290, 225)
+texture = ExtResource("1_g5y53")
+
+[node name="Paralaxbg-2" type="Sprite2D" parent="."]
+position = Vector2(-373, -1.52588e-05)
+scale = Vector2(1.57778, 1.98611)
+texture = ExtResource("2_15idg")
+
+[node name="Paralaxbg-3" type="Sprite2D" parent="."]
+position = Vector2(194, 0.999985)
+scale = Vector2(1.57778, 1.98611)
+texture = ExtResource("2_15idg")
+
+[node name="Paralaxbg-4" type="Sprite2D" parent="."]
+position = Vector2(533, 3.99997)
+scale = Vector2(1.57778, 1.98611)
+texture = ExtResource("2_15idg")
+hframes = 5
+
+[node name="Paralaxbg-1" type="Sprite2D" parent="."]
+position = Vector2(-336.75, 95.75)
+scale = Vector2(1.70417, 1.4875)
+texture = ExtResource("3_cpesl")
+
+[node name="Paralaxbg-5" type="Sprite2D" parent="."]
+position = Vector2(277, 95)
+scale = Vector2(1.70417, 1.4875)
+texture = ExtResource("3_cpesl")

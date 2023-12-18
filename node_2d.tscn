@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://3kdtjj0c28pq"]
+[gd_scene load_steps=2 format=3 uid="uid://3kdtjj0c28pq"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://e3ayfhafk52r" path="res://background 1.tscn" id="1_8lpcw"]
+
+[node name="first scene" type="Node2D"]
+modulate = Color(0, 1.18, 0.79, 1)
+
+[node name="Background3-720" parent="." instance=ExtResource("1_8lpcw")]
+position = Vector2(605, 344)
