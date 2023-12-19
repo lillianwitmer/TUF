@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnvw1y3mgwfs8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrj0e"]
+
+[node name="TUF_mc" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nrj0e")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.32, 1.32)
