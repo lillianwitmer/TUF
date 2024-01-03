@@ -173,6 +173,7 @@ animations = [{
 
 [node name="MC_fairy" type="CharacterBody2D"]
 script = ExtResource("1_kh68j")
+data = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_meqm6")
