@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://3kdtjj0c28pq"]
+[gd_scene load_steps=17 format=3 uid="uid://3kdtjj0c28pq"]
 
 [ext_resource type="PackedScene" uid="uid://e3ayfhafk52r" path="res://background 1.tscn" id="1_8lpcw"]
 [ext_resource type="Texture2D" uid="uid://jsq31ubnhjvo" path="res://assests/foreground-props2.png" id="2_ghkqa"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bairuppybdvvd" path="res://assests/paralaxbg_-_1.png" id="7_domsb"]
 [ext_resource type="Texture2D" uid="uid://bnufqb3dkia0" path="res://assests/paralaxbg_-_2.png" id="8_2jheo"]
 [ext_resource type="Texture2D" uid="uid://bbsantfrt43wu" path="res://assests/background3-720.png" id="9_bnp4c"]
+[ext_resource type="PackedScene" uid="uid://6jqemfl7a1r" path="res://mc_fairy.tscn" id="10_5d6ut"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uyq5g"]
 texture = ExtResource("2_ghkqa")
@@ -5904,3 +5905,6 @@ texture = ExtResource("8_2jheo")
 position = Vector2(1428, 361)
 scale = Vector2(1.75, 2)
 texture = ExtResource("8_2jheo")
+
+[node name="MC_fairy" parent="." instance=ExtResource("10_5d6ut")]
+motion_mode = 1
