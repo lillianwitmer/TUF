@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704394012
-background 1.tscn::PackedScene::338601084157012735::1702925579::0::1::::<><>::uid://bbsantfrt43wu::::res://assests/background3-720.png<>uid://bnufqb3dkia0::::res://assests/paralaxbg_-_2.png<>uid://bairuppybdvvd::::res://assests/paralaxbg_-_1.png
+::res://::1704479832
+background 1.tscn::PackedScene::338601084157012735::1702925579::0::1::::<><>::uid://bbsantfrt43wu
 icon.svg::CompressedTexture2D::6644158433950463893::1702320696::1702320722::1::::<><>::
-MC_fairy.gd::GDScript::-1::1704394009::0::1::::<>CharacterBody2D<>::
-mc_fairy.tscn::PackedScene::64570964887418581::1704394012::0::1::::<><>::res://MC_fairy.gd<>uid://ds8tivti2jg07::::res://assests/IMG_0300.PNG
-node_2d.tscn::PackedScene::1986147968221046122::1704394009::0::1::::<><>::uid://e3ayfhafk52r::::res://background 1.tscn<>uid://jsq31ubnhjvo::::res://assests/foreground-props2.png<>uid://cw10v8t31hy7b::::res://assests/house.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://dcida7ak8t5rw::::res://assests/sheet_2.png<>uid://dqim5t8fh4lhd::::res://assests/thorns.png<>uid://bairuppybdvvd::::res://assests/paralaxbg_-_1.png<>uid://bnufqb3dkia0::::res://assests/paralaxbg_-_2.png<>uid://bbsantfrt43wu::::res://assests/background3-720.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn
-second_scene.tscn::PackedScene::2540491648440675441::1704394011::0::1::::<><>::uid://cltygo4o2gcus::::res://assests/bg_02_h.png<>uid://5lyvv4x4jqy5::::res://assests/fgtiles-alpha.png<>uid://cer7gsmwys15u::::res://assests/dirt-tiles.png<>uid://dyqipddl26xut::::res://assests/sheet_1.png<>uid://datyramrnwtt4::::res://assests/phase-2.png<>uid://bircdveguwldj::::res://assests/moonflower.png<>uid://c4gjy7cojnmww::::res://assests/bounceshroom.png<>uid://cqolp4vumc8hu::::res://assests/piranha-plant-attack.png
-tuf_mc.tscn::PackedScene::8116452460060410281::1703098844::0::1::::<><>::uid://ds8tivti2jg07::::res://assests/IMG_0300.PNG
+MC_fairy.gd::GDScript::-1::1704478228::0::1::::<>CharacterBody2D<>::
+mc_fairy.tscn::PackedScene::64570964887418581::1704478752::0::1::::<><>::res://MC_fairy.gd<>uid://ds8tivti2jg07::::res://assests/IMG_0300.PNG
+node_2d.tscn::PackedScene::1986147968221046122::1704478748::0::1::::<><>::uid://e3ayfhafk52r::::res://background 1.tscn<>uid://jsq31ubnhjvo::::res://assests/foreground-props2.png<>uid://cw10v8t31hy7b::::res://assests/house.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://dcida7ak8t5rw::::res://assests/sheet_2.png<>uid://dqim5t8fh4lhd::::res://assests/thorns.png<>uid://bairuppybdvvd::::res://assests/paralaxbg_-_1.png<>uid://bnufqb3dkia0::::res://assests/paralaxbg_-_2.png<>uid://bbsantfrt43wu::::res://assests/background3-720.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn
+enemy.gd::GDScript::-1::1704479832::0::1::::<>Area2D<>::
+second_scene.tscn::PackedScene::2540491648440675441::1704478751::0::1::::<><>::uid://cltygo4o2gcus::::res://assests/bg_02_h.png<>uid://5lyvv4x4jqy5::::res://assests/fgtiles-alpha.png<>uid://cer7gsmwys15u::::res://assests/dirt-tiles.png<>uid://dyqipddl26xut::::res://assests/sheet_1.png<>uid://datyramrnwtt4::::res://assests/phase-2.png<>uid://bircdveguwldj::::res://assests/moonflower.png<>uid://c4gjy7cojnmww::::res://assests/bounceshroom.png<>uid://cqolp4vumc8hu::::res://assests/piranha-plant-attack.png
+tuf_mc.tscn::PackedScene::8116452460060410281::1703098844::0::1::::<><>::uid://ds8tivti2jg07
 ::res://assests/::1704218777
 2.png::CompressedTexture2D::4653221645088560000::1702925578::1702925578::1::::<><>::
 4.png::CompressedTexture2D::4952477584953026982::1702925578::1702925578::1::::<><>::

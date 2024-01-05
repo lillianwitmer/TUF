@@ -5907,4 +5907,4 @@ scale = Vector2(1.75, 2)
 texture = ExtResource("8_2jheo")
 
 [node name="MC_fairy" parent="." instance=ExtResource("10_5d6ut")]
-motion_mode = 1
+position = Vector2(878, 776)
