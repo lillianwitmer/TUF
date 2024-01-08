@@ -1,6 +1,7 @@
-[gd_scene load_steps=30 format=3 uid="uid://bcgvr5m5bc7ar"]
+[gd_scene load_steps=31 format=3 uid="uid://bcgvr5m5bc7ar"]
 
 [ext_resource type="Texture2D" uid="uid://cltygo4o2gcus" path="res://assests/bg_02_h.png" id="1_qumaq"]
+[ext_resource type="PackedScene" uid="uid://6jqemfl7a1r" path="res://mc_fairy.tscn" id="2_7lvwx"]
 [ext_resource type="Texture2D" uid="uid://5lyvv4x4jqy5" path="res://assests/fgtiles-alpha.png" id="2_hufn2"]
 [ext_resource type="Texture2D" uid="uid://cer7gsmwys15u" path="res://assests/dirt-tiles.png" id="3_rfko2"]
 [ext_resource type="Texture2D" uid="uid://dyqipddl26xut" path="res://assests/sheet_1.png" id="4_qryho"]
@@ -13542,3 +13543,7 @@ position = Vector2(14, 7)
 tile_set = SubResource("TileSet_q85nx")
 format = 2
 layer_0/tile_data = PackedInt32Array(1048631, 1572864, 62, 1048632, 1638400, 62, 1048633, 1572864, 64, 983098, 1638400, 63, 1048634, 1638400, 64, 1048635, 1703936, 64, 1048636, 1703936, 62, 1048637, 1769472, 62, 1048638, 1703936, 64, 1048639, 1769472, 64, 1048640, 1572864, 62, 1048641, 1638400, 62, 1048642, 1703936, 62, 1048643, 1769472, 62, 1048644, 1703936, 64, 1048645, 1769472, 64, 1048646, 1572864, 64, 1048647, 1638400, 64, 1048648, 1703936, 64, 1048649, 1769472, 64, 1048650, 1572864, 62, 1048651, 1638400, 62, 1048652, 1572864, 62, 1048653, 1638400, 62, 1048654, 1703936, 62, 1048655, 1703936, 64, 1048656, 1769472, 64, 786501, 720896, 18, 852037, 720896, 19, 786495, 786432, 18, 852031, 786432, 19, 786489, 786432, 18, 852025, 786432, 19, 786507, 786432, 18, 852043, 786432, 19, 786512, 720896, 18, 852048, 720896, 19)
+
+[node name="MC_fairy" parent="." instance=ExtResource("2_7lvwx")]
+position = Vector2(441, 144)
+data = null

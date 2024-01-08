@@ -148,6 +148,7 @@ animations = [{
 [node name="MC_fairy" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_kh68j")
+data = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_meqm6")
@@ -158,4 +159,4 @@ sprite_frames = SubResource("SpriteFrames_5j3ht")
 animation = &"dash forward"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.25, 1.25)
+zoom = Vector2(1.7, 1.7)

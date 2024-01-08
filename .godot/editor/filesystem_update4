@@ -1,5 +1,5 @@
 res://node_2d.tscn
+res://MC_fairy.gd
 res://second_scene.tscn
 res://mc_fairy.tscn
-res://MC_fairy.gd
-res://enemy.gd
+res://enemy.tscn

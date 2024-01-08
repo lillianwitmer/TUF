@@ -17,7 +17,7 @@ func get_direction_name():
 		int(round(look_direction.angle() * 2 / PI)) % 4
 ]
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
+var gravity_on = true
 var look_direction = Vector2.RIGHT
 var screen_size = get_viewport_rect().size
 
@@ -49,22 +49,35 @@ func get_input():
 	velocity = input_direction * SPEED
 
 func _physics_process(delta):
-	
-	# Add the gravity.
-	if not is_on_floor():
+# Add the gravity.
+	if not is_on_floor() and gravity_on :
 		velocity.y += gravity * delta
 
+	if Input.is_action_just_pressed(KEY_D):
+	# Handle Jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-	
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	get_input()
+	
+		update_animation(direction)
 	move_and_slide()
+	
+@onready var anim = $AnimatedSprite2D
+func update_animation(direction):
+	if not is_on_floor():
+		anim.play("idle")
+	elif direction != 0:
+		anim.play("walk_right")
+		anim.flip_h = direction < 0 
+	else:
+		anim.play("idle")
 
 
 
