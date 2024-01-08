@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://6jqemfl7a1r"]
+[gd_scene load_steps=20 format=3 uid="uid://6jqemfl7a1r"]
 
 [ext_resource type="Script" path="res://MC_fairy.gd" id="1_kh68j"]
 [ext_resource type="Texture2D" uid="uid://ds8tivti2jg07" path="res://assests/IMG_0300.PNG" id="2_dsa8p"]
@@ -18,18 +18,6 @@ region = Rect2(64, 3, 64, 63)
 [sub_resource type="AtlasTexture" id="AtlasTexture_enm01"]
 atlas = ExtResource("2_dsa8p")
 region = Rect2(256, 66, 64, 63)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vlgfu"]
-atlas = ExtResource("2_dsa8p")
-region = Rect2(384, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1p0rb"]
-atlas = ExtResource("2_dsa8p")
-region = Rect2(256, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k5jlv"]
-atlas = ExtResource("2_dsa8p")
-region = Rect2(448, 128, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nmrfu"]
 atlas = ExtResource("2_dsa8p")
@@ -97,20 +85,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vlgfu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1p0rb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k5jlv")
-}],
-"loop": true,
-"name": &"dash back",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_nmrfu")
 }, {
 "duration": 1.0,
@@ -172,6 +146,7 @@ animations = [{
 }]
 
 [node name="MC_fairy" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_kh68j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -180,7 +155,7 @@ shape = SubResource("CapsuleShape2D_meqm6")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(4, -5)
 sprite_frames = SubResource("SpriteFrames_5j3ht")
-animation = &"idle"
+animation = &"dash forward"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.25, 1.25)
