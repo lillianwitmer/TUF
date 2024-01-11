@@ -6,6 +6,8 @@ const JUMP_VELOCITY = -400.0
 
 enum STATES { IDLE = 0, DEAD, DAMAGED, ATTACKING, DASHING }
 
+@export var projectile : PackedScene
+
 @export var data = {
 	"max_health": 60.0,  # 20hp per heart; 5 per fraction
 	"health": 60.0,      # Min 60 Max 400
@@ -20,6 +22,11 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var gravity_on = true
 var look_direction = Vector2.RIGHT
 var screen_size = get_viewport_rect().size
+
+func shoot():
+	var b = projectile.()
+	add_child(b)
+	b.transform = $aim.transform
 
 func _process(delta):
 	var velocity = Vector2.ZERO 
@@ -42,6 +49,9 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h = true
 	else:
 		$AnimatedSprite2D.flip_h = false
+	
+	if Input.is_action_just_pressed("shoot"):
+		shoot()
 
 
 func get_input():
@@ -53,8 +63,7 @@ func _physics_process(delta):
 	if not is_on_floor() and gravity_on :
 		velocity.y += gravity * delta
 
-	if Input.is_action_just_pressed(KEY_D):
-	# Handle Jump.
+
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 

@@ -160,3 +160,6 @@ animation = &"dash forward"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.7, 1.7)
+
+[node name="aim" type="Marker2D" parent="."]
+position = Vector2(-35, -3)

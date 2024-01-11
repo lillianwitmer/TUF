@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://du2t6mbwqnack"]
+
+[ext_resource type="Script" path="res://projectile.gd" id="1_v2j52"]
+[ext_resource type="Texture2D" uid="uid://c0bxot6sgu8p1" path="res://assests/boulders.png" id="2_vg7sm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gwn4r"]
+radius = 9.0
+
+[node name="projectile" type="Area2D"]
+script = ExtResource("1_v2j52")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vg7sm")
+hframes = 64
+vframes = 48
+frame = 109
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gwn4r")

@@ -12838,4 +12838,3 @@ layer_0/tile_data = PackedInt32Array(2424907, 5570566, 45, 2621515, 5570566, 48,
 
 [node name="MC_fairy" parent="." instance=ExtResource("10_5d6ut")]
 position = Vector2(878, 776)
-data = null
