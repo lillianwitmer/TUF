@@ -21,15 +21,13 @@ func get_direction_name():
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var gravity_on = true
 var look_direction = Vector2.RIGHT
-var screen_size = get_viewport_rect().size
+# +var screen_size = get_viewport_rect().size
 
 func shoot():
-	var b = projectile.()
-	add_child(b)
-	b.transform = $aim.transform
+	pass
 
 func _process(delta):
-	var velocity = Vector2.ZERO 
+	velocity = Vector2.ZERO 
 	if Input.is_action_pressed("ui_left"):
 		velocity.x += 1
 	if Input.is_action_pressed("ui_right"):
@@ -42,8 +40,8 @@ func _process(delta):
 		$AnimatedSprite2D.play()
 	else:
 		$AnimatedSprite2D.stop()
-	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
+	# position += velocity * delta
+	# position = position.clamp(Vector2.ZERO, screen_size)
 	
 	if velocity.x < 0:
 		$AnimatedSprite2D.flip_h = true
@@ -52,6 +50,9 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
+	
+	velocity *= delta
+	move_and_slide()
 
 
 func get_input():

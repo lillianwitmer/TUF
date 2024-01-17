@@ -13442,9 +13442,14 @@ sources/0 = SubResource("TileSetAtlasSource_g7xi4")
 
 [node name="second scene" type="Node2D"]
 
+[node name="MC_fairy" parent="." instance=ExtResource("2_7lvwx")]
+z_index = 1
+position = Vector2(435, 143)
+
 [node name="Bg02H" type="Sprite2D" parent="."]
-position = Vector2(664, -93)
+position = Vector2(670, -94)
 texture = ExtResource("1_qumaq")
+metadata/_edit_lock_ = true
 
 [node name="Bg02H2" type="Sprite2D" parent="."]
 position = Vector2(1997, -93)
@@ -13539,10 +13544,7 @@ position = Vector2(1239, 452)
 texture = ExtResource("8_ieujf")
 
 [node name="TileMap3" type="TileMap" parent="."]
-position = Vector2(14, 7)
+position = Vector2(11, 9)
 tile_set = SubResource("TileSet_q85nx")
 format = 2
 layer_0/tile_data = PackedInt32Array(1048631, 1572864, 62, 1048632, 1638400, 62, 1048633, 1572864, 64, 983098, 1638400, 63, 1048634, 1638400, 64, 1048635, 1703936, 64, 1048636, 1703936, 62, 1048637, 1769472, 62, 1048638, 1703936, 64, 1048639, 1769472, 64, 1048640, 1572864, 62, 1048641, 1638400, 62, 1048642, 1703936, 62, 1048643, 1769472, 62, 1048644, 1703936, 64, 1048645, 1769472, 64, 1048646, 1572864, 64, 1048647, 1638400, 64, 1048648, 1703936, 64, 1048649, 1769472, 64, 1048650, 1572864, 62, 1048651, 1638400, 62, 1048652, 1572864, 62, 1048653, 1638400, 62, 1048654, 1703936, 62, 1048655, 1703936, 64, 1048656, 1769472, 64, 786501, 720896, 18, 852037, 720896, 19, 786495, 786432, 18, 852031, 786432, 19, 786489, 786432, 18, 852025, 786432, 19, 786507, 786432, 18, 852043, 786432, 19, 786512, 720896, 18, 852048, 720896, 19)
-
-[node name="MC_fairy" parent="." instance=ExtResource("2_7lvwx")]
-position = Vector2(441, 144)
