@@ -5,7 +5,6 @@ var speed = 0
 var animation_lock = 0.0 
 var damage_lock = 0.0
 var AI_STATE = STATES.IDLE
-var velocity = 
 
 enum STATES { IDLE=0, LEFT, RIGHT, DAMAGED }
 
@@ -37,7 +36,7 @@ var vision_distance = 40.0
 func turn_toward_player_location(location: Vector2):
 	# set the state to  move towards player 
 	var dir_to_player = (location - global_position).normalized()
-	velocity = dir_to_player * (SPEED * 2)
+	var _velocity = dir_to_player * (speed * 2)
 	# determine closest cardinal direction for animation 
 	var closest_angle = INF
 	var closest_state = STATES.IDLE
@@ -60,4 +59,30 @@ func _physics_process(delta):
 		raycastM.target_position = raydir * vision_distance
 		raycastL.target_position = raydir.rotated(deg_to_rad(-45)).normalized() * vision_distance 
 		raycastR.target_position=  raydir.rotated(deg_to_rad(45)).normalized() * vision_distance 
+	
+	if animation_lock == 0.0:
+		if AI_STATE == STATES.DAMAGED:
+			$AnimatedSprite2D.material = null
+			AI_STATE = STATES.IDLE
+		
+		
+		for player in get_tree().get_nodes_in_group("player"):
+			if player.data.state != player.STATES.DEAD:
+				if (raycastM.is_colliding() and raycastM.get_collider() == player) or \
+				(raycastL.is_colliding() and raycastL.get_collider() == player) or \
+				(raycastR.is_colliding() and raycastR.get_collider() == player) :
+					turn_toward_player_location(player.global_position)
+		
+		ai_timer = clamp(ai_timer - delta, 0.0, ai_timer_max)
+		
+		
+			
+		var direction = state_direction[int(AI_STATE)]
+		
+			
+		if AI_STATE == STATES.IDLE and anim_player.is_playing():
+			anim_player.stop()
+		
+		inertia = inertia.move_toward(Vector2(), delta * 1000.0)
+	
 
