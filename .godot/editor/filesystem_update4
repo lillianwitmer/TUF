@@ -1,1 +1,10 @@
+res://changelvl.gd
+res://changelvl.tscn
+res://MC_fairy.gd
+res://node_2d.tscn
+res://second_scene.tscn
 res://third_scene.tscn
+res://mc_fairy.tscn
+res://enemy.tscn
+res://projectile.tscn
+res://end_1.tscn

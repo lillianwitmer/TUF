@@ -1,17 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705515975
-background 1.tscn::PackedScene::338601084157012735::1702923832::0::1::::<><>::uid://bbsantfrt43wu::::res://assests/background3-720.png<>uid://bnufqb3dkia0::::res://assests/paralaxbg_-_2.png<>uid://bairuppybdvvd::::res://assests/paralaxbg_-_1.png
-enemy.gd::GDScript::-1::1705515938::0::1::::<>Area2D<>::
-enemy.tscn::PackedScene::6785355879292986863::1705515938::0::1::::<><>::res://enemy.gd<>uid://b8dbxshlwqjr7::::res://assests/naga.png
+::res://::1705603921
+background 1.tscn::PackedScene::338601084157012735::1702923832::0::1::::<><>::uid://bbsantfrt43wu
+enemy.gd::GDScript::-1::1705518142::0::1::::<>Area2D<>::
+enemy.tscn::PackedScene::6785355879292986863::1705603921::0::1::::<><>::res://enemy.gd<>uid://b8dbxshlwqjr7::::res://assests/naga.png
 icon.svg::CompressedTexture2D::6644158433950463893::1702665262::1702665262::1::::<><>::
-MC_fairy.gd::GDScript::-1::1705515938::0::1::::<>CharacterBody2D<>::
-mc_fairy.tscn::PackedScene::64570964887418581::1705515939::0::1::::<><>::res://MC_fairy.gd<>uid://ds8tivti2jg07::::res://assests/IMG_0300.PNG
-node_2d.tscn::PackedScene::1986147968221046122::1704739848::0::1::::<><>::uid://e3ayfhafk52r::::res://background 1.tscn<>uid://jsq31ubnhjvo::::res://assests/foreground-props2.png<>uid://cw10v8t31hy7b::::res://assests/house.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://dcida7ak8t5rw::::res://assests/sheet_2.png<>uid://dqim5t8fh4lhd::::res://assests/thorns.png<>uid://bairuppybdvvd::::res://assests/paralaxbg_-_1.png<>uid://bnufqb3dkia0::::res://assests/paralaxbg_-_2.png<>uid://bbsantfrt43wu::::res://assests/background3-720.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn<>uid://bu8jfvw276201::::res://assests/tree.png<>uid://b7kb47bc4ewfo::::res://assests/2.png<>uid://5lyvv4x4jqy5::::res://assests/fgtiles-alpha.png
+MC_fairy.gd::GDScript::-1::1705603853::0::1::::<>CharacterBody2D<>::
+mc_fairy.tscn::PackedScene::64570964887418581::1705603921::0::1::::<><>::res://MC_fairy.gd<>uid://ds8tivti2jg07::::res://assests/IMG_0300.PNG
+node_2d.tscn::PackedScene::1986147968221046122::1705603970::0::1::::<><>::uid://e3ayfhafk52r::::res://background 1.tscn<>uid://jsq31ubnhjvo::::res://assests/foreground-props2.png<>uid://cw10v8t31hy7b::::res://assests/house.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://dcida7ak8t5rw::::res://assests/sheet_2.png<>uid://dqim5t8fh4lhd::::res://assests/thorns.png<>uid://bairuppybdvvd::::res://assests/paralaxbg_-_1.png<>uid://bnufqb3dkia0::::res://assests/paralaxbg_-_2.png<>uid://bbsantfrt43wu::::res://assests/background3-720.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn<>uid://bu8jfvw276201::::res://assests/tree.png<>uid://b7kb47bc4ewfo::::res://assests/2.png<>uid://5lyvv4x4jqy5::::res://assests/fgtiles-alpha.png<>res://changelvl.gd
 projectile.gd::GDScript::-1::1705515939::0::1::::<>Area2D<>::
-projectile.tscn::PackedScene::8619986738519657270::1705515939::0::1::::<><>::res://projectile.gd<>uid://c0bxot6sgu8p1::::res://assests/boulders.png
-second_scene.tscn::PackedScene::2540491648440675441::1705515939::0::1::::<><>::uid://cltygo4o2gcus::::res://assests/bg_02_h.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn<>uid://5lyvv4x4jqy5::::res://assests/fgtiles-alpha.png<>uid://cer7gsmwys15u::::res://assests/dirt-tiles.png<>uid://dyqipddl26xut::::res://assests/sheet_1.png<>uid://datyramrnwtt4::::res://assests/phase-2.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://bircdveguwldj::::res://assests/moonflower.png<>uid://c4gjy7cojnmww::::res://assests/bounceshroom.png<>uid://cqolp4vumc8hu::::res://assests/piranha-plant-attack.png
-third_scene.tscn::PackedScene::184947490538040993::1704739813::0::1::::<><>::uid://m5huwuhp42aq::::res://assests/mines_BG.png<>uid://c660dkorbe0fi::::res://assests/bg-layer-1-full-alpha.png<>uid://cer7gsmwys15u::::res://assests/dirt-tiles.png<>uid://x62thcqlrct3::::res://assests/mushroom-red.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://dcg267isbbah6::::res://assests/playing around.png<>uid://dyqipddl26xut::::res://assests/sheet_1.png
-tuf_mc.tscn::PackedScene::8116452460060410281::1703098961::0::1::::<><>::uid://ds8tivti2jg07::::res://assests/IMG_0300.PNG
+projectile.tscn::PackedScene::8619986738519657270::1705603921::0::1::::<><>::res://projectile.gd<>uid://c0bxot6sgu8p1::::res://assests/boulders.png
+changelvl.gd::GDScript::-1::1705603910::0::1::::<>Area2D<>::
+changelvl.tscn::PackedScene::7763061455446756729::1705603921::0::1::::<><>::res://changelvl.gd
+end_1.tscn::PackedScene::1127912697197793157::1705603921::0::1::::<><>::uid://bqovmgle7xg5v::::res://assests/space3.png<>uid://beqrxhjacajkp::::res://assests/space4.png<>uid://bbmoqkn34hpb5::::res://assests/space5.png<>uid://dv41jsrg0uj8j::::res://assests/space6.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn
+second_scene.tscn::PackedScene::2540491648440675441::1705603918::0::1::::<><>::uid://cltygo4o2gcus::::res://assests/bg_02_h.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn<>uid://5lyvv4x4jqy5::::res://assests/fgtiles-alpha.png<>uid://cer7gsmwys15u::::res://assests/dirt-tiles.png<>uid://dyqipddl26xut::::res://assests/sheet_1.png<>uid://datyramrnwtt4::::res://assests/phase-2.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://bircdveguwldj::::res://assests/moonflower.png<>uid://c4gjy7cojnmww::::res://assests/bounceshroom.png<>uid://cqolp4vumc8hu::::res://assests/piranha-plant-attack.png
+third_scene.tscn::PackedScene::184947490538040993::1705603921::0::1::::<><>::uid://m5huwuhp42aq::::res://assests/mines_BG.png<>uid://c660dkorbe0fi::::res://assests/bg-layer-1-full-alpha.png<>uid://cer7gsmwys15u::::res://assests/dirt-tiles.png<>uid://x62thcqlrct3::::res://assests/mushroom-red.png<>uid://yboumcf8ox6p::::res://assests/platformertiles.png<>uid://dcg267isbbah6::::res://assests/playing around.png<>uid://dyqipddl26xut::::res://assests/sheet_1.png<>uid://pyqyvckpannb::::res://assests/bee.png<>uid://6jqemfl7a1r::::res://mc_fairy.tscn
+tuf_mc.tscn::PackedScene::8116452460060410281::1703098961::0::1::::<><>::uid://ds8tivti2jg07
 ::res://assests/::1705515938
 2.png::CompressedTexture2D::4653221645088560000::1702492339::1702666333::1::::<><>::
 4.png::CompressedTexture2D::4952477584953026982::1702492338::1702666333::1::::<><>::
