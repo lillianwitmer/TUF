@@ -28,6 +28,8 @@ func shoot():
 
 func _process(delta):
 	velocity = Vector2.ZERO 
+	if Input.is_action_pressed("ui_accept"):
+		velocity.y -= 100
 	if Input.is_action_pressed("ui_left"):
 		velocity.x += 1
 	if Input.is_action_pressed("ui_right"):
