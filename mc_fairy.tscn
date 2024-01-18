@@ -145,7 +145,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="MC_fairy" type="CharacterBody2D"]
+[node name="MC_fairy" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_kh68j")
 
